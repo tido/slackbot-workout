@@ -1,0 +1,25 @@
+{
+  "name": "slackbot-workout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tido/slackbot-workout.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tido/slackbot-workout/issues"
+  },
+  "homepage": "https://github.com/tido/slackbot-workout#readme",
+  "dependencies": {
+    "axios": "0.16.2",
+    "co": "4.6.0",
+    "lodash": "4.17.4",
+    "slack": "8.3.1"
+  }
+}
