@@ -4,7 +4,6 @@
   "channelName": "",
   "channelId": "",
   "officeHours": {
-    "on": false,
     "begin": 9,
     "end": 17
   },
