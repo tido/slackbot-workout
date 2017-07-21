@@ -1,0 +1,54 @@
+{
+  "webhook": "",
+  "token": "",
+  "channelName": "",
+  "channelId": "",
+  "officeHours": {
+    "on": false,
+    "begin": 9,
+    "end": 17
+  },
+  "callouts": {
+    "minutesBetween": {
+      "min": 40,
+      "max": 70
+    },
+    "numPeople": 3
+  },
+  "exercises": [{
+      "id": 0,
+      "name": "pushups",
+      "minReps": 15,
+      "maxReps": 20,
+      "units": "rep"
+    },
+    {
+      "id": 1,
+      "name": "planks",
+      "minReps": 40,
+      "maxReps": 60,
+      "units": "second"
+    },
+    {
+      "id": 2,
+      "name": "wall sit",
+      "minReps": 40,
+      "maxReps": 50,
+      "units": "second"
+    },
+    {
+      "id": 3,
+      "name": "chair dips",
+      "minReps": 15,
+      "maxReps": 30,
+      "units": "rep"
+    },
+    {
+      "id": 4,
+      "name": "calf raises",
+      "minReps": 20,
+      "maxReps": 30,
+      "units": "rep"
+    }
+  ]
+}

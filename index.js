@@ -1,8 +1,9 @@
-const { shuffle, slice, filter, flow, get, map, join } = require('lodash/fp');
+const { shuffle, slice, filter, flow, get, map, join, sample, random } = require('lodash/fp');
 const axios = require('axios');
 const co = require('co');
 
 const config = require('./config');
+const { callouts, exercises } = config;
 
 const sendMessage = message => axios.post(config.webhook, {
   channel: config.channel,
@@ -17,9 +18,14 @@ const wait = minutes => done => setTimeout(done, minutes * 60 * 1000);
 const pickParticipants = flow(
   get('channel.members'),
   shuffle,
-  slice(0,2),
+  slice(0, callouts.numPeople),
   map(id => `<@${id}>`),
   join(' ')
+);
+
+pickExercise = flow(
+  shuffle,
+  sample
 );
 
 co(function* () {
@@ -28,10 +34,17 @@ co(function* () {
   while(true) {
     const { data: channelInfo } = yield axios.get(channelInfoUrl);
     const participants = pickParticipants(channelInfo);
-    console.log(participants)
-    yield sendMessage(`${participants} - 10 pushups NOW PLEASE!`);
 
-    yield wait(1);
+    const {
+      minReps,
+      maxReps,
+      name,
+      units,
+    } = pickExercise(exercises);
+
+    yield sendMessage(`${participants} - ${random(minReps, maxReps)} ${units} ${name} NOW PLEASE!`);
+
+    yield wait(random(callouts.minutesBetween.min, callouts.minutesBetween.max));
   }
 
 });
