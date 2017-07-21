@@ -7,7 +7,7 @@ const config = require('./config');
 const { callouts, exercises, officeHours } = config;
 
 const sendMessage = message => axios.post(config.webhook, {
-  channel: config.channel,
+  channel: config.channelName,
   username: 'Tido Music Workout Bot',
   text: message,
   icon_emoji: ':weight_lifter:',
