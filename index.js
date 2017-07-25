@@ -35,7 +35,8 @@ co(function* () {
   while (true) {
     const { data: channelInfo } = yield axios.get(channelInfoUrl);
     console.log(channelInfo);
-    const { members } = channelInfo.channel;
+    let { members } = channelInfo.channel;
+    members = members.filter(value => value !== '@jamie.coe')
     const memberStatusRequests = flow(
       map(userStatusUrl),
       map(url => axios.get(url).then(get('data')))
