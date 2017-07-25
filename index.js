@@ -24,7 +24,7 @@ const pickParticipants = flow(
   join(' ')
 );
 
-pickExercise = flow(
+const pickExercise = flow(
   shuffle,
   sample
 );
