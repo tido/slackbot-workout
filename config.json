@@ -48,6 +48,13 @@
       "minReps": 20,
       "maxReps": 30,
       "units": "rep"
+    },
+    {
+      "id": 5,
+      "name": "nap",
+      "minReps": 20,
+      "maxReps": 30,
+      "units": "minutes"
     }
   ]
 }
