@@ -1,11 +1,11 @@
 {
   "webhook": "",
-  "token": "",
   "channelName": "",
+  "token": "",
   "channelId": "",
   "officeHours": {
-    "begin": 9,
-    "end": 17
+    "begin": 8.5,
+    "end": 17.5
   },
   "callouts": {
     "minutesBetween": {
@@ -14,7 +14,8 @@
     },
     "numPeople": 3
   },
-  "exercises": [{
+  "exercises": [
+    {
       "id": 0,
       "name": "pushups",
       "minReps": 15,
