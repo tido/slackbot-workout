@@ -9,10 +9,10 @@
   },
   "callouts": {
     "minutesBetween": {
-      "min": 40,
-      "max": 70
+      "min": 30,
+      "max": 60
     },
-    "numPeople": 3
+    "numPeople": 4
   },
   "exercises": [
     {
@@ -33,7 +33,7 @@
       "id": 2,
       "name": "wall sit",
       "minReps": 40,
-      "maxReps": 50,
+      "maxReps": 60,
       "units": "second"
     },
     {
@@ -47,7 +47,21 @@
       "id": 4,
       "name": "calf raises",
       "minReps": 20,
-      "maxReps": 30,
+      "maxReps": 40,
+      "units": "rep"
+    },
+    {
+      "id": 5,
+      "name": "squats",
+      "minReps": 10,
+      "maxReps": 40,
+      "units": "rep"
+    },
+    {
+      "id": 6,
+      "name": "spiderman pushups",
+      "minReps": 2,
+      "maxReps": 8,
       "units": "rep"
     }
   ]
