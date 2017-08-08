@@ -63,6 +63,48 @@
       "minReps": 2,
       "maxReps": 8,
       "units": "rep"
+    },
+    {
+      "id": 5,
+      "name": "raise the roof",
+      "minReps": 20,
+      "maxReps": 30,
+      "units": "rep"
+    },
+    {
+      "id": 6,
+      "name": "triceps kick",
+      "minReps": 20,
+      "maxReps": 30,
+      "units": "rep"
+    },
+    {
+      "id": 7,
+      "name": "the hulk",
+      "minReps": 20,
+      "maxReps": 30,
+      "units": "rep"
+    },
+    {
+      "id": 8,
+      "name": "hamstring curl",
+      "minReps": 20,
+      "maxReps": 30,
+      "units": "rep"
+    },
+    {
+      "id": 9,
+      "name": "knee lift",
+      "minReps": 20,
+      "maxReps": 30,
+      "units": "rep"
+    },
+    {
+      "id": 10,
+      "name": "hallelujah",
+      "minReps": 20,
+      "maxReps": 30,
+      "units": "rep"
     }
   ]
 }
